@@ -26,11 +26,11 @@
         "images"
       ]
     },
-    "categories": {
+    "category": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::category.category",
-      "mappedBy": "article"
+      "inversedBy": "articles"
     },
     "slug": {
       "type": "uid"
